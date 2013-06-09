@@ -25,10 +25,10 @@
   (= false (= "foo" :foo 'foo))
 
   "Make a keyword with your keyboard"
-  (= :foo (keyword "foo"))
+  (= :foo (keyword (quote foo)))
 
   "Symbolism is all around us"
-  (= 'foo (symbol "foo"))
+  (= 'foo (symbol (quote foo)))
 
   "When things cannot be equal, they must be different"
   (not= :fill-in-the-blank "anything"))
